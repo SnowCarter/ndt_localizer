@@ -26,8 +26,7 @@
           -configuration_directory $(find cartographer_ros)/configuration_files
           -configuration_basename vlp16-imu.lua"
       output="screen">
-    <remap from="points2_1" to="velodyne_points" />
-    <remap from="points2_2" to="velodyne_points" />
+    <remap from="points2" to="velodyne_points" />
   </node>
 
   <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
